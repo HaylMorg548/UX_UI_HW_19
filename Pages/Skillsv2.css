@@ -165,7 +165,7 @@ background-color: #DFAC93;
     padding: 20px;
     justify-content: space-between;
     align-items: center;
-    background-color: #C6ABB3;
+    background-color: #D79778;
     cursor: pointer;
     transition: background-color .3s;
 
@@ -183,7 +183,7 @@ background-color: #DFAC93;
 
 .accordianBody {
     padding: 1rem;
-    background-color: #D79778;
+    background-color: #F0B19F;
     display: none;
 }
 
