@@ -1,208 +1,212 @@
 /*Total Page*/
-    *{
-        font-size: 100%;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        padding: 0px;
-        margin: 0px;
-    }
-    body {
-        background-color: grey;
-        min-height: 100vh;
-        display: flex;
-        flex-direction: column;
-    }
-    .m-left-images {
-        margin-left: 236px;
-    }
-    .BG {
-        background-color: aliceblue;
-        width: 100%;
-        min-height: 100vh;
-    }
+*{
+    font-size: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0px;
+    margin: 0px;
+}
+body {
+    background-color: grey;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.m-left-images {
+    margin-left: 236px;
+}
+.BG {
+    background-color: aliceblue;
+    width: 100%;
+    min-height: 100vh;
+}
 /*Navigation*/
-    .topNav {
-        background-color: #723144;
-        float:top;
-        }
-    .pageHeader {
-        background-color: antiquewhite;
-        flex: inline-block;
+.topNav {
+    background-color: #723144;
+    float:top;
     }
-    .sideNav {
-       /* background-color: burlywood;*/
-        /*float:right;*/
-        width:10%;
-        position: absolute;
-        right: 0px;
-        /*top: 0px*/
-   
-     
-    }
-    .sideNav ul{
-        list-style-type: none;
-        /*padding: 10px;
-        margin: 10px;*/
-        overflow: hidden;  
-    }
-    .sideNav a {
-        text-decoration: none;
-        font-weight: bold;
-        padding: 5px;
-        align-items: baseline;
-        justify-content: center;
-        color: #723144
-        
-    }
-    .sideNav li {
-       /* width: 229px;
-        height: 51px;*/
-        line-height: 51px;
-        vertical-align: middle;
-    }
-    .sideNav li:hover {
-        background-color: #E67D5F;
-        text-decoration: underline;
-    }
+.pageHeader {
+    background-color: antiquewhite;
+    flex: inline-block;
+}
+.sideNav {
+   /* background-color: burlywood;*/
+    /*float:right;*/
+    width:10%;
+    position: absolute;
+    right: 0px;
+    /*top: 0px*/
+
+ 
+}
+.sideNav ul{
+    list-style-type: none;
+    /*padding: 10px;
+    margin: 10px;*/
+    overflow: hidden;  
+}
+.sideNav a {
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px;
+    align-items: baseline;
+    justify-content: center;
+    color: #723144
+    
+}
+.sideNav li {
+   /* width: 229px;
+    height: 51px;*/
+    line-height: 51px;
+    vertical-align: middle;
+}
+.sideNav li:hover {
+    background-color: #E67D5F;
+    text-decoration: underline;
+}
 
 /*Colours*/
 .mainBG {
-    background-color: #F5E4CA;
-    
+background-color: #F5E4CA;
+
 }
 .col1 {
-    background-color: #D79778;
+background-color: #D79778;
 }
 .col2 {
-    background-color: #F0B19F;
+background-color: #F0B19F;
 }
 .col3 {
-    background-color: #C6ABB3;
+background-color: #C6ABB3;
 }
 .col4 {
-    background-color: #DFAC93;
+background-color: #DFAC93;
 }
 
 /*Page Content */
-    .pageBody {
-        /*background-color: green;*/
-        float: left;
-        flex-grow:1;
-        width: 90%;
-        
+.pageBody {
+    /*background-color: green;*/
+    float: left;
+    flex-grow:1;
+    width: 90%;
+    
+}
+.mainBody {
+    display: flex;  
+    flex-direction: row;
+    width: 90%;
+    
+}
+.pageHeader { 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #723144;
     }
-    .mainBody {
-        display: flex;  
-        flex-direction: row;
-        width: 90%;
-        
-    }
-    .pageHeader { 
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        color: #723144;
+.introMain {
+    padding:50px;
+}
+.portfolioPage {
+   /* display: grid;*/
+    /*background-color: #E67D5F;*/
+    width: 90%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "firstRow" 
+    "secondRow";
+    grid-template-rows: 1fr 1fr;
+    height: 85%;
+    
+}
+.portfolioElement {
+    /*align-items: left;*/
+    margin-left: 50px;
+    padding: 10px;
+    /* width: 100%; */
+    
+            /*display: inline-block;
+    justify-content: space-around;*/
+}
+.portfolioMargin {
+    margin: 50px;
+
+}
+.firstRow {
+    display: flex;
+    grid-area: firstRow;
+    justify-content: space-evenly;
+    align-items: center;
+    
+
         }
-    .introMain {
-        padding:50px;
-    }
-    .portfolioPage {
-       /* display: grid;*/
-        /*background-color: #E67D5F;*/
-        width: 90%;
-        grid-template-columns: 1fr 1fr;
-        grid-template-areas: 
-        "firstRow" 
-        "secondRow";
-        grid-template-rows: 1fr 1fr;
-        height: 85%;
-        
-    }
-    .portfolioElement {
-        /*align-items: left;*/
-        margin-left: 50px;
-        padding: 10px;
-        /* width: 100%; */
-        
-                /*display: inline-block;
-        justify-content: space-around;*/
-    }
-    .portfolioMargin {
-        margin: 50px;
-    
-    }
-    .firstRow {
-        display: flex;
-        grid-area: firstRow;
-        justify-content: space-evenly;
-        align-items: center;
-        
-    
-            }
-    .secondRow {
-        display: flex;
-        grid-area: secondRow;
-        justify-content: space-evenly;
-        align-items: center;
-    }
-    .margin50 {
-        padding-left:70px;
-    }
+.secondRow {
+    display: flex;
+    grid-area: secondRow;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.margin50 {
+    padding-left:70px;
+}
 
 /* Typography */
-    h1 {
-        font-family: quicksand;
-        
-    }
-    .intro {
-        font-size: x-large;
-        flex: inline-block;
-    }
-    h2 {
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        font-size: 20px ;
-    }
-    p {
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
-    p .aboutMe {
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+h1 {
+    font-family: quicksand;
+    
+}
+.intro {
+    font-size: x-large;
+    flex: inline-block;
+}
+h2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px ;
+}
+p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+p .aboutMe {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
-    }
+}
 
 /*Images*/
-    .logo {
-        max-width: 100px;
-        display: inline-block;
-        float: left;
-        margin-top: -30px;
-    }
-    .portfolioPageImage {
-        max-width: 500px;
-        display: inline-block;
-        margin-bottom: 10px;
-    }
+.logo {
+    max-width: 100px;
+    display: inline-block;
+    float: left;
+    margin-top: -30px;
+}
+.portfolioPageImage {
+    max-width: 500px;
+    display: inline-block;
+    margin-bottom: 10px;
+}
 
 /*Footer*/
-    footer {
-        margin-top: auto;
-        background-color: #C6ABB3;
-        position:absolute;
-        bottom:0;
-        width: 100%;
-        /* align-items:end; */
-        /* flex: 30vh;
-        padding: 20px; */
-    }
+footer {
+    margin-top: auto;
+    background-color: #C6ABB3;
+    position:absolute;
+    bottom:0;
+    width: 100%;
+    /* align-items:end; */
+    /* flex: 30vh;
+    padding: 20px; */
+}
 
 /*Media Query*/
 @media screen and (max-width: 600px) { 
-    .portfolioPage {
-    display: block;
-     /*background-color: #E67D5F;*/
-     width: 100%;
-     /* grid-template-columns: 1fr;
-     grid-template-areas: 
-     "firstRow" 
-     "secondRow";
-     grid-template-rows: 1fr;
-      */
- }
+.portfolioPage {
+    display:grid;
+    width: 90%;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "firstRow" 
+    "secondRow";
+    grid-template-rows: 1fr;
+    height: 85%;
+}
+.firstRow {
+    display:block;
+}
+.secondRow {
+    display:block;
 }
